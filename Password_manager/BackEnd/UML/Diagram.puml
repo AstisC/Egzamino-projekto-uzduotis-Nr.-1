@@ -1,0 +1,38 @@
+@startuml
+package "Password Manager API" {
+  [PasswordManagerAPI] -right-> [Controllers]
+  [PasswordManagerAPI] -down-> [Services]
+  [Controllers] -down-> [Data]
+  [Data] -down-> [Migrations]
+  [Services] -right-> [Models]
+}
+
+package "Frontend" {
+  [PasswordManagerForm] -right-> [PasswordService]
+  [PasswordManagerForm] -left-> [Session]
+  [PasswordManagerForm] -down-> [PasswordGenerator]
+  [PasswordService] -down-> [ApiService]
+  [Session] -left-> [User]
+}
+
+package "Models and Services" {
+  [Models] <-- [Data]
+  [Services] --> [ApiService]
+  [ApiService] -> [PasswordManagerAPI]
+}
+
+package "Database" {
+  database "PasswordManagerDB" {
+    frame "Tables" {
+      [dbo.PasswordEntries]
+      [dbo.Users]
+    }
+    frame "Migrations" {
+      [dbo.__EFMigrationsHistory]
+    }
+  }
+
+  [Data] --> [PasswordManagerDB]
+}
+
+@enduml
