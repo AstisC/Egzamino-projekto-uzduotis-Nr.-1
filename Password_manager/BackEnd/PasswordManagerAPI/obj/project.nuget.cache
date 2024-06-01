@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7Fl2YKdzBS5W4M+4SwSA2ENHFBiFWXHUwd0UVNqDqzbrtIcSXnbWDfliziuUNDT/RyPg6kxTKEggkX3vgy3fwg==",
+  "dgSpecHash": "Co1uMRE4dxUrXIXZA9Etj0tpkb9PPMo53Z/AacNzihFaw5CAYFWar7aSFgSubK5bkjfTZtNDFMfjPQ2cRalQlQ==",
   "success": true,
-  "projectFilePath": "C:\\Kolegija\\Programavimas\\Password_manager\\BackEnd\\PasswordManagerAPI\\PasswordManagerAPI.csproj",
+  "projectFilePath": "C:\\Users\\casti\\Documents\\GitHub\\Egzamino-projekto-uzduotis-Nr.-1\\Password_manager\\BackEnd\\PasswordManagerAPI\\PasswordManagerAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\casti\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\casti\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

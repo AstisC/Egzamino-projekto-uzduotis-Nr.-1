@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jhZMptbzYEc2J8CtMI28Y8lk5qdrqO/69mNxSQBK/5cp9fL42irfB4meWY6QY5aqs1BzrX62ybkzljFawkNN1g==",
+  "dgSpecHash": "2vP6MYbRO06iy66IiL77VMe5Fuwbge/gORsrvljaHX9V04jfffLJY+iKflQDYG+TiWVXzSz2I4H0d3JOwADXcQ==",
   "success": true,
-  "projectFilePath": "C:\\Kolegija\\Programavimas\\Password_manager\\BackEnd\\C#\\C#.csproj",
+  "projectFilePath": "C:\\Users\\casti\\Documents\\GitHub\\Egzamino-projekto-uzduotis-Nr.-1\\Password_manager\\BackEnd\\C#\\C#.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\casti\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\casti\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

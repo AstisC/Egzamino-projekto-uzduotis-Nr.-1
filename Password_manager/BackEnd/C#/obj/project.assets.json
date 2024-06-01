@@ -4073,8 +4073,8 @@
     },
     "PasswordManagerAPI/1.0.0": {
       "type": "project",
-      "path": "../PasswordManagerAPI/PasswordManagerAPI.csproj",
-      "msbuildProject": "../PasswordManagerAPI/PasswordManagerAPI.csproj"
+      "path": "../../../../../../../../Kolegija/Programavimas/Password_manager/BackEnd/PasswordManagerAPI/PasswordManagerAPI.csproj",
+      "msbuildProject": "../../../../../../../../Kolegija/Programavimas/Password_manager/BackEnd/PasswordManagerAPI/PasswordManagerAPI.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4092,11 +4092,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Kolegija\\Programavimas\\Password_manager\\BackEnd\\C#\\C#.csproj",
+      "projectUniqueName": "C:\\Users\\casti\\Documents\\GitHub\\Egzamino-projekto-uzduotis-Nr.-1\\Password_manager\\BackEnd\\C#\\C#.csproj",
       "projectName": "C#",
-      "projectPath": "C:\\Kolegija\\Programavimas\\Password_manager\\BackEnd\\C#\\C#.csproj",
+      "projectPath": "C:\\Users\\casti\\Documents\\GitHub\\Egzamino-projekto-uzduotis-Nr.-1\\Password_manager\\BackEnd\\C#\\C#.csproj",
       "packagesPath": "C:\\Users\\casti\\.nuget\\packages\\",
-      "outputPath": "C:\\Kolegija\\Programavimas\\Password_manager\\BackEnd\\C#\\obj\\",
+      "outputPath": "C:\\Users\\casti\\Documents\\GitHub\\Egzamino-projekto-uzduotis-Nr.-1\\Password_manager\\BackEnd\\C#\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\casti\\AppData\\Roaming\\NuGet\\NuGet.Config",
