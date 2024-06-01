@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace WinFormsApp
@@ -13,6 +13,9 @@ namespace WinFormsApp
         {
             InitializeComponent();
             _passwordEntries = new List<PasswordEntry>();
+            AdjustLayout();
+            ApplyStyles();
+            dataGridView1.CellDoubleClick += dataGridView1_CellDoubleClick;
         }
 
         private void PasswordManagerForm_Load(object sender, EventArgs e)
@@ -30,6 +33,16 @@ namespace WinFormsApp
             {
                 e.Value = new string('•', e.Value.ToString().Length);
                 e.FormattingApplied = true;
+            }
+        }
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == 2 && e.RowIndex >= 0)
+            {
+                var password = dataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString();
+                Clipboard.SetText(password);
+                MessageBox.Show("Slaptažodis nukopijuotas į iškarpinę.");
             }
         }
 
@@ -57,6 +70,45 @@ namespace WinFormsApp
                     cell.Value = new string('•', _passwordEntries[row.Index].Password.Length);
                 }
             }
+        }
+
+        private void AdjustLayout()
+        {
+            // Aukštis ir plotis
+            int btnHeight = 30;
+            int btnWidth = 100;
+
+            // Mygtukų ir kontrolinių elementų dydžiai ir pozicijos
+            btnAdd.Height = btnHeight;
+            btnAdd.Width = btnWidth;
+            btnAdd.Location = new Point(10, this.ClientSize.Height - btnHeight - 10);
+
+            // Pasirinkimo žymės dėžutė, jei naudojama rodyti slaptažodžius
+            chkShowPasswords.Height = 20;
+            chkShowPasswords.Width = 150;
+            chkShowPasswords.Location = new Point(btnAdd.Right + 10, this.ClientSize.Height - chkShowPasswords.Height - 10);
+
+            // DataGridView pritaikymas
+            dataGridView1.Dock = DockStyle.Fill;
+        }
+
+        private void ApplyStyles()
+        {
+            // Formos fono spalva
+            this.BackColor = Color.LightGray;
+
+            // Mygtukų stilius
+            btnAdd.FlatStyle = FlatStyle.Flat;
+            btnAdd.BackColor = Color.SteelBlue;
+            btnAdd.ForeColor = Color.White;
+
+            // CheckBox stilius
+            chkShowPasswords.ForeColor = Color.DarkBlue;
+
+            // DataGridView stilius
+            dataGridView1.BackgroundColor = Color.WhiteSmoke;
+            dataGridView1.DefaultCellStyle.BackColor = Color.Beige;
+            dataGridView1.AlternatingRowsDefaultCellStyle.BackColor = Color.LightBlue;
         }
     }
 

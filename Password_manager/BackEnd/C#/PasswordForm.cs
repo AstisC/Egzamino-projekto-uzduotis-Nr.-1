@@ -19,7 +19,7 @@ namespace WinFormsApp
 
         private string GeneratePassword()
         {
-            int length = 14; // Pakeiskite pagal poreikį
+            int length = 14;
             int numUpperCase = 3;
             int numLowerCase = 5;
             int numDigits = 3;
