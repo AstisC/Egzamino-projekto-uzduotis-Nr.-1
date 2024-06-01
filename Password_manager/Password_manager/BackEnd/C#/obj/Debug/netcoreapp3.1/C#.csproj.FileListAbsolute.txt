@@ -1,0 +1,5 @@
+C:\Kolegija\Programavimas\Password_manager\BackEnd\C#\obj\Debug\netcoreapp3.1\C#.csproj.AssemblyReference.cache
+C:\Kolegija\Programavimas\Password_manager\BackEnd\C#\obj\Debug\netcoreapp3.1\C#.GeneratedMSBuildEditorConfig.editorconfig
+C:\Kolegija\Programavimas\Password_manager\BackEnd\C#\obj\Debug\netcoreapp3.1\C#.AssemblyInfoInputs.cache
+C:\Kolegija\Programavimas\Password_manager\BackEnd\C#\obj\Debug\netcoreapp3.1\C#.AssemblyInfo.cs
+C:\Kolegija\Programavimas\Password_manager\BackEnd\C#\obj\Debug\netcoreapp3.1\C#.csproj.CoreCompileInputs.cache
